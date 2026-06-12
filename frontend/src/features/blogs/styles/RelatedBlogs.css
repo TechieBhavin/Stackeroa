@@ -1,0 +1,53 @@
+.related-blogs {
+  margin-top: 60px;
+}
+
+.related-blogs h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+/* GRID LAYOUT */
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* PREVENT OVERFLOW INSIDE CHILD CARDS */
+.related-grid > * {
+  overflow: hidden;
+  border-radius: 16px;
+  height: 100%;
+}
+
+/* IMAGE SAFETY (NO OVERFLOW ISSUES) */
+.related-grid img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .related-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.related-grid > * {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.related-grid > *:hover {
+  transform: translateY(-5px);
+}

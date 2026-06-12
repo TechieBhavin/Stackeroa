@@ -1,0 +1,83 @@
+.become-author {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+/* MAIN CARD */
+.author-wrapper {
+  display: flex;
+  border-radius: 16px;
+  overflow: hidden;
+  background: white;
+  border: 2px solid #ff7816;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+/* LEFT PANEL */
+.author-left {
+  flex: 1;
+  background: #ff7816;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff7816;
+  margin-bottom: 20px;
+}
+
+.headline {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.subtext {
+  color: #cbd5e1;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.benefits p {
+  margin: 8px 0;
+  color: #e2e8f0;
+}
+
+/* RIGHT PANEL */
+.author-right {
+  flex: 1;
+  padding: 40px;
+  background: white;
+}
+
+.form-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* BUTTON */
+.submit-btn {
+  margin-top: 10px !important;
+  padding: 12px !important;
+  font-weight: 600 !important;
+  background: #ff7816 !important;
+}
+
+.submit-btn:hover {
+  background: #ff7816 !important;
+}
