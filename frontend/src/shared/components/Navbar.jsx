@@ -239,7 +239,7 @@ function Navbar() {
               }}
             >
               {/* Profile */}
-              <Box
+              {/* <Box
                 onClick={handleMenuOpen}
                 sx={{
                   display: "flex",
@@ -257,7 +257,7 @@ function Navbar() {
                 }}
               >
                 ...
-              </Box>
+              </Box> */}
 
               <Menu anchorEl={anchorEl} open={open} onClose={handleMenuClose}>
                 <MenuItem
