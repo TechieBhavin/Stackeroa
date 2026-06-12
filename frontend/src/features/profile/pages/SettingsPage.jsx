@@ -9,12 +9,58 @@ function SettingsPage() {
       <Navbar />
       <div className="settings-page">
 
-      <div className="settings-header">
-        <h1>Settings</h1>
-        <p>
-          Manage your account information and profile preferences.
-        </p>
-      </div>
+      <div className="settings-hero">
+
+  <div>
+
+    <span className="settings-badge">
+      Account Settings
+    </span>
+
+    <h1>
+      Manage Your Profile
+    </h1>
+
+    <p>
+      Customize your public profile,
+      social presence and writing preferences.
+    </p>
+
+  </div>
+
+  <div className="profile-completion">
+
+    <span>Profile Completion</span>
+
+    <h2>85%</h2>
+
+  </div>
+
+</div>
+
+<div className="avatar-card">
+
+  <img
+    src="/media/avatar.jpg"
+    alt=""
+    className="settings-avatar"
+  />
+
+  <div>
+
+    <h3>Profile Picture</h3>
+
+    <p>
+      Upload a professional photo.
+    </p>
+
+  </div>
+
+  <button>
+    Change Photo
+  </button>
+
+</div>
 
       {/* Profile Information */}
 
@@ -92,6 +138,31 @@ function SettingsPage() {
         </div>
       </div>
 
+      <div className="settings-card">
+
+  <h2>Writing Preferences</h2>
+
+  <div className="preferences-list">
+
+    <label>
+      <input type="checkbox" defaultChecked />
+      Weekly Newsletter Updates
+    </label>
+
+    <label>
+      <input type="checkbox" defaultChecked />
+      Featured Article Notifications
+    </label>
+
+    <label>
+      <input type="checkbox" />
+      Marketing Emails
+    </label>
+
+  </div>
+
+</div>
+
       {/* Password */}
 
       <div className="settings-card">
@@ -128,6 +199,20 @@ function SettingsPage() {
           Save Changes
         </button>
       </div>
+
+      <div className="danger-zone">
+
+  <h2>Danger Zone</h2>
+
+  <p>
+    Permanently remove your account and content.
+  </p>
+
+  <button>
+    Delete Account
+  </button>
+
+</div>
 
     </div>
       <Footer />

@@ -42,95 +42,135 @@ function BecomeAuthor() {
       <Navbar />
       <div className="become-author">
       <Container maxWidth="md">
-        <Paper className="author-wrapper" elevation={0}>
-          
-          {/* LEFT INFO PANEL */}
-          <Box className="author-left">
-            <Typography className="brand"><img
-                src="/media/NewLogo.png"
-                alt="CodeChronicles"
-                style={{
-                  height: "34px",
-                  objectFit: "contain",
-                }}
-              /></Typography>
+        <>
+  <div className="author-hero">
 
-            <Typography className="headline">
-              Share your knowledge with the developer community
-            </Typography>
+    <span className="author-badge">
+      Become a Publisher
+    </span>
 
-            <Typography className="subtext">
-              Become a verified author and publish articles on React,
-              DSA, System Design, Backend and more.
-            </Typography>
+    <h1>
+      Share Your Knowledge With Developers
+    </h1>
 
-            <Box className="benefits">
-              <p>✔ Publish technical blogs</p>
-              <p>✔ Build your developer profile</p>
-              <p>✔ Reach thousands of readers</p>
-              <p>✔ Get featured articles</p>
-            </Box>
-          </Box>
+    <p>
+      Join Stackeroa as an author and publish
+      articles on React, Java, System Design,
+      DevOps, DSA, Backend Engineering and more.
+    </p>
 
-          {/* RIGHT FORM PANEL */}
-          <Box className="author-right">
-            <Typography className="form-title">
-              Become an Author
-            </Typography>
+  </div>
 
-            <Box component="form" onSubmit={handleSubmit} className="form">
-              <TextField
-                label="Full Name"
-                name="name"
-                fullWidth
-                onChange={handleChange}
-                required
-              />
+  <div className="benefits-grid">
 
-              <TextField
-                label="Email"
-                name="email"
-                fullWidth
-                onChange={handleChange}
-                required
-              />
+    <div className="benefit-card">
+      <h3>✍️ Publish Articles</h3>
+      <p>
+        Share tutorials, guides and engineering insights.
+      </p>
+    </div>
 
-              <TextField
-                label="Short Bio"
-                name="bio"
-                fullWidth
-                multiline
-                rows={3}
-                onChange={handleChange}
-                required
-              />
+    <div className="benefit-card">
+      <h3>🚀 Grow Your Audience</h3>
+      <p>
+        Reach thousands of developers worldwide.
+      </p>
+    </div>
 
-              <TextField
-                label="Expertise (React, DSA, Backend...)"
-                name="expertise"
-                fullWidth
-                onChange={handleChange}
-                required
-              />
+    <div className="benefit-card">
+      <h3>🏆 Build Authority</h3>
+      <p>
+        Strengthen your professional developer profile.
+      </p>
+    </div>
 
-              <TextField
-                label="GitHub / Portfolio"
-                name="portfolio"
-                fullWidth
-                onChange={handleChange}
-              />
+    <div className="benefit-card">
+      <h3>⭐ Featured Authors</h3>
+      <p>
+        Top authors get featured across the platform.
+      </p>
+    </div>
 
-              <Button
-                type="submit"
-                variant="contained"
-                fullWidth
-                className="submit-btn"
-              >
-                Apply for Author Access
-              </Button>
-            </Box>
-          </Box>
-        </Paper>
+  </div>
+
+  <Paper
+    className="author-wrapper"
+    elevation={0}
+  >
+
+    <Typography className="form-title">
+      Author Application
+    </Typography>
+
+    <Typography className="form-subtitle">
+      Tell us a little about yourself.
+    </Typography>
+
+    <Box
+      component="form"
+      onSubmit={handleSubmit}
+      className="form"
+    >
+
+      <TextField
+        label="Full Name"
+        name="name"
+        fullWidth
+        onChange={handleChange}
+        required
+      />
+
+      <TextField
+        label="Email Address"
+        name="email"
+        fullWidth
+        onChange={handleChange}
+        required
+      />
+
+      <TextField
+        label="Short Bio"
+        name="bio"
+        multiline
+        rows={4}
+        fullWidth
+        onChange={handleChange}
+        required
+      />
+
+      <TextField
+        label="Expertise"
+        name="expertise"
+        fullWidth
+        onChange={handleChange}
+        placeholder="React, Java, DevOps..."
+        required
+      />
+
+      <TextField
+        label="GitHub / Portfolio"
+        name="portfolio"
+        fullWidth
+        onChange={handleChange}
+      />
+
+      <Button
+        type="submit"
+        variant="contained"
+        fullWidth
+        className="submit-btn"
+      >
+        Apply For Author Access
+      </Button>
+
+    </Box>
+
+    <div className="author-footer-note">
+      Applications are usually reviewed within 48 hours.
+    </div>
+
+  </Paper>
+</>
       </Container>
     </div>
       <Footer />

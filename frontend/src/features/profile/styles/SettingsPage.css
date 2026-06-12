@@ -1,8 +1,8 @@
 .settings-page {
-  max-width: 1100px;
+  max-width: 90%;
   margin: auto;
   padding: 40px 20px 80px;
-  background: #f8fafc;
+  /* background: #f8fafc; */
   min-height: 100vh;
 }
 
@@ -99,6 +99,114 @@
   padding: 12px 22px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.settings-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.settings-badge {
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.settings-hero h1 {
+  font-size: 48px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.settings-hero p {
+  color: #6b7280;
+}
+
+.profile-completion {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 25px;
+  text-align: center;
+  min-width: 180px;
+}
+
+.profile-completion span {
+  color: #6b7280;
+}
+
+.profile-completion h2 {
+  margin-top: 8px;
+  font-size: 36px;
+}
+
+.avatar-card {
+  background: white;
+  border-radius: 22px;
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+.settings-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-card button {
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+}
+
+.preferences-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.preferences-list label {
+  font-size: 15px;
+}
+
+.danger-zone {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 22px;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+.danger-zone h2 {
+  color: #dc2626;
+  margin-bottom: 10px;
+}
+
+.danger-zone p {
+  color: #7f1d1d;
+  margin-bottom: 20px;
+}
+
+.danger-zone button {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
 }
 
 /* MOBILE */

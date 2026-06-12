@@ -59,6 +59,35 @@ function ProfilePage() {
           </div>
         </div>
 
+        <div className="author-achievements">
+  <h2>Achievements</h2>
+
+  <div className="badges-grid">
+
+    <div className="badge-card">
+      <h3>🏆 Top Writer</h3>
+      <p>
+        One of the most read authors this month.
+      </p>
+    </div>
+
+    <div className="badge-card">
+      <h3>🔥 10K Views</h3>
+      <p>
+        Reached more than 10,000 article views.
+      </p>
+    </div>
+
+    <div className="badge-card">
+      <h3>⭐ Community Favorite</h3>
+      <p>
+        Consistently receives positive feedback.
+      </p>
+    </div>
+
+  </div>
+</div>
+
       </Container>
     </div>
     <Footer />

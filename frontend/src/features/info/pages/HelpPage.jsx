@@ -132,26 +132,65 @@ function HelpPage() {
         </Container>
       </section>
 
+      <section className="resources-section">
+  <Container maxWidth="lg">
+
+    <Typography className="section-title">
+      Popular Resources
+    </Typography>
+
+    <div className="resources-grid">
+
+      <div className="resource-card">
+        <h3>Writing Your First Article</h3>
+        <p>
+          Learn how to publish technical content on Stackeroa.
+        </p>
+      </div>
+
+      <div className="resource-card">
+        <h3>Author Guidelines</h3>
+        <p>
+          Best practices for creating high quality articles.
+        </p>
+      </div>
+
+      <div className="resource-card">
+        <h3>Profile Setup Guide</h3>
+        <p>
+          Complete your profile and build your author brand.
+        </p>
+      </div>
+
+    </div>
+
+  </Container>
+</section>
+
       {/* CONTACT */}
 
       <section className="contact-section">
-        <Container maxWidth="sm">
+  <Container maxWidth="lg">
 
-          <Typography className="contact-title">
-            Still need help?
-          </Typography>
+    <div className="contact-card">
 
-          <Typography className="contact-text">
-            Reach out to our support team and we'll get back
-            to you as soon as possible.
-          </Typography>
+      <Typography className="contact-title">
+        Still Need Help?
+      </Typography>
 
-          <button className="contact-btn">
-            Contact Support
-          </button>
+      <Typography className="contact-text">
+        Our support team is ready to help you with account
+        issues, author applications, subscriptions and more.
+      </Typography>
 
-        </Container>
-      </section>
+      <button className="contact-btn">
+        Contact Support
+      </button>
+
+    </div>
+
+  </Container>
+</section>
 
     </div>
     <Footer />
