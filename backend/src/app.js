@@ -8,6 +8,8 @@ import commentRoutes from "./modules/comments/comments.routes.js";
 import likeRoutes from "./modules/likes/likes.routes.js";
 import userRoutes from "./modules/user/user.routes.js";
 import cloudinary from "./config/cloudinary.js"; 
+import categoryRoutes from "./modules/categories/categories.routes.js";
+import bookmarkRoutes from "./modules/bookmarks/bookmarks.routes.js";
 
 const app = express();
 app.use((req, res, next) => {
@@ -23,7 +25,11 @@ app.use("/api/auth", authRoutes);
 
 app.use("/api/posts", postRoutes);
 
+app.use("/api/categories", categoryRoutes);
+
 app.use("/api/comments", commentRoutes);
+
+app.use("/api/bookmarks", bookmarkRoutes);
 
 app.use("/api/likes", likeRoutes);
 

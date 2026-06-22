@@ -4,6 +4,9 @@ import {
   getAllPosts,
   getPostById,
   deletePost,
+  getPostBySlug,
+  incrementPostViews,
+  getRelatedPosts,
 } from "./posts.controller.js";
 import { upload } from "../../middlewares/upload.middleware.js";
 
@@ -13,6 +16,9 @@ const router = express.Router();
 
 // PUBLIC
 router.get("/", getAllPosts);
+router.get("/slug/:slug", getPostBySlug);
+router.patch("/slug/:slug/view", incrementPostViews);
+router.get("/:slug/related", getRelatedPosts);
 router.get("/:id", getPostById);
 
 // PROTECTED

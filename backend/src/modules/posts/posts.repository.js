@@ -42,3 +42,28 @@ export const getPostById = async (id) => {
 export const deletePostById = async (id) => {
   return await Post.findByIdAndDelete(id);
 };
+
+export const getPostBySlug = async (slug) => {
+  return await Post.findOne({ slug })
+    .populate("author", "name email")
+    .populate("category", "name slug icon");
+};
+
+export const incrementPostViews = async (slug) => {
+  return await Post.findOneAndUpdate(
+    { slug },
+    { $inc: { views: 1 } },
+    { new: true }
+  );
+};
+
+export const getRelatedPosts = async (postId, categoryId) => {
+  return await Post.find({
+    _id: { $ne: postId },
+    category: categoryId,
+  })
+    .populate("author", "name")
+    .populate("category", "name slug icon")
+    .sort({ createdAt: -1 })
+    .limit(4);
+};

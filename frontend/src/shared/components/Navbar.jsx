@@ -199,6 +199,7 @@ function Navbar() {
 
               {/* Bookmark */}
               <IconButton
+                onClick={() => navigate("/bookmarks")}
                 size="small"
                 sx={{
                   color: "#6b7280",

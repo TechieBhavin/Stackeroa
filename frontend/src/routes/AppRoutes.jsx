@@ -11,6 +11,7 @@ import ProfilePage from "../features/profile/pages/ProfilePage";
 import MyArticlesPage from "../features/profile/pages/MyArticlesPage";
 import SettingsPage from "../features/profile/pages/SettingsPage";
 import SubscribePage from "../features/subscription/pages/SubscribePage";
+import BookmarkPage from "../features/bookmarks/pages/BookmarkPage";
 
 const AppRoutes = () => {
   return (
@@ -40,6 +41,7 @@ const AppRoutes = () => {
       <Route path="/my-articles" element={<MyArticlesPage />} />
       <Route path="/settings" element={<SettingsPage />} />
       <Route path="/subscribe" element={<SubscribePage />} />
+      <Route path="/bookmarks" element={<BookmarkPage />} />
     </Routes>
   );
 };

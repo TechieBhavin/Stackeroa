@@ -4,6 +4,9 @@ import {
   getAllPostsService,
   getPostByIdService,
   deletePostService,
+  getPostBySlugService,
+  incrementPostViewsService,
+  getRelatedPostsService
 } from "./posts.service.js";
 import cloudinary from "../../config/cloudinary.js";
 import streamifier from "streamifier";
@@ -78,3 +81,68 @@ export const deletePost = async (req, res) => {
     return apiResponse(res, error.statusCode || 400, false, error.message);
   }
 };
+
+export const getPostBySlug = async (req, res) => {
+  try {
+    const post = await getPostBySlugService(req.params.slug);
+
+    return apiResponse(
+      res,
+      200,
+      true,
+      "Post fetched successfully",
+      post
+    );
+  } catch (error) {
+    return apiResponse(
+      res,
+      error.statusCode || 400,
+      false,
+      error.message
+    );
+  }
+};
+export const incrementPostViews = async (req, res) => {
+  try {
+    const post = await incrementPostViewsService(req.params.slug);
+
+    return apiResponse(
+      res,
+      200,
+      true,
+      "Views updated successfully",
+      {
+        views: post.views,
+      }
+    );
+  } catch (error) {
+    return apiResponse(
+      res,
+      error.statusCode || 400,
+      false,
+      error.message
+    );
+  }
+};
+
+export const getRelatedPosts = async (req, res) => {
+  try {
+    const posts = await getRelatedPostsService(req.params.slug);
+
+    return apiResponse(
+      res,
+      200,
+      true,
+      "Related posts fetched successfully",
+      posts
+    );
+  } catch (error) {
+    return apiResponse(
+      res,
+      error.statusCode || 400,
+      false,
+      error.message
+    );
+  }
+};
+
