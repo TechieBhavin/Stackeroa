@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
 .home {
   background: #ffffff;
   color: #111827;
@@ -11,8 +13,10 @@
 }
 
 .hero-title {
-  font-size: 4rem !important;
+  font-size: 50px !important;
   font-weight: 800 !important;
+  font-family: 'Sora', sans-serif !important;
+  color: #171310;
   line-height: 1.1;
   margin-bottom: 20px !important;
 }
@@ -20,6 +24,7 @@
 .hero-subtitle {
   max-width: 700px;
   margin: auto !important;
+  font-family: 'Sora', sans-serif !important;
   color: #6b7280;
   font-size: 1.15rem !important;
 }
@@ -28,6 +33,7 @@
   display: flex;
   justify-content: center;
   gap: 15px;
+  font-family: 'Sora', sans-serif !important;
   margin-top: 35px;
 }
 

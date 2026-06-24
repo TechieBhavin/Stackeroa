@@ -106,6 +106,7 @@
   background: #f9fafb;
   padding: 2rem;
   border-top: 1px solid #e5e7eb;
+  font-family: 'Sora', sans-serif !important;
 }
 
 .footer-bottom-content {
@@ -120,6 +121,7 @@
 .footer-copyright {
   color: #6b7280 !important;
   font-size: 0.875rem !important;
+  font-family: 'Sora', sans-serif !important;
 }
 
 .footer-bottom-links {
@@ -201,6 +203,7 @@
   color: #6b7280;
   margin-top: 20px;
   margin-bottom: 10px;
+  font-family: 'Sora', sans-serif !important;
 }
 
 .footer-stats {
@@ -220,6 +223,7 @@
   text-transform: uppercase;
   color: #9ca3af;
   margin-bottom: 22px;
+  font-family: 'Sora', sans-serif !important;
 }
 
 .footer-right a {
@@ -282,6 +286,7 @@
   cursor: pointer;
   font-weight: 600;
   transition: .3s;
+  font-family: 'Sora', sans-serif !important;
 }
 
 .footer-subscribe-btn:hover {

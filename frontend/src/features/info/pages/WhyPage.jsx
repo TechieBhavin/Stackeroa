@@ -14,7 +14,7 @@ function WhyPage() {
       <section className="why-hero">
         <Container maxWidth="lg">
           <Typography className="why-badge">
-            WHY STACKEROA
+            WHY STACKEORA
           </Typography>
 
           <Typography className="why-title">
@@ -23,7 +23,7 @@ function WhyPage() {
           </Typography>
 
           <Typography className="why-subtitle">
-            Stackeroa is a modern engineering publication platform
+            Stackeora is a modern engineering publication platform
             where developers can learn practical skills, publish
             technical content, and grow their professional presence.
           </Typography>

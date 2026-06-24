@@ -55,7 +55,7 @@ function Footer() {
             {/* Right Section */}
             <Box className="footer-right">
               <Box>
-                <Typography className="footer-heading">PRODUCT</Typography>
+                <Typography className="footer-heading">RESOURCES</Typography>
 
                 <Link to="/categories">Categories</Link>
                 <Link to="/my-articles">Articles</Link>
@@ -64,10 +64,10 @@ function Footer() {
               </Box>
 
               <Box>
-                <Typography className="footer-heading">RESOURCES</Typography>
+                <Typography className="footer-heading">PRODUCT</Typography>
 
                 <Link to="/help">Help Center</Link>
-                <Link to="/why">Why Stackeroa</Link>
+                <Link to="/why">Why Stackeora</Link>
                 <Link to="/profile">Profile</Link>
               </Box>
 
@@ -102,7 +102,7 @@ function Footer() {
         <Container maxWidth="lg">
           <Box className="footer-bottom-content">
             <Typography variant="body2" className="footer-copyright">
-              © {new Date().getFullYear()} Stackeroa.in · All rights reserved
+              © {new Date().getFullYear()} Stackeora.in · All rights reserved
             </Typography>
             <Box className="footer-bottom-links">
               <a href="#privacy">Privacy Policy</a>
